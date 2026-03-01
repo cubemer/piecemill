@@ -1,0 +1,14 @@
+[Unit]
+Description=Piecemill Dispatch Server
+After=network.target
+
+[Service]
+Type=simple
+User=piecemill
+WorkingDirectory=/opt/piecemill
+ExecStart=/opt/piecemill/piecemill serve --http=0.0.0.0:8090
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
