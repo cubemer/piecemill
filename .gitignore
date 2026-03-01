@@ -12,6 +12,13 @@ dist
 dist-ssr
 *.local
 
+# Go build output
+piecemill-linux-amd64
+server/dist
+
+# PocketBase data
+pb_data
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
